@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MD Frango Assado</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../Style/confirmar.css" />
+        <script defer src="../Scrypt/confirmar.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../images/logo.png" alt="Logo" />
+        </header>
+        <article>
+            <div class="title-confirm">
+                <h1>Itens Selecionaos:</h1>
+            </div>
+
+            <form action="">
+                <table>
+                    <tr>
+                        <th>Nome:</th>
+                        <th>Valor:</th>
+                        <th>Quant.</th>
+                    </tr>
+                    <!-- <tr>
+                        <td class="nameProdutc" id="nameProdutc">Alcatra</td>
+                        <td class="valor">R$60,00</td>
+                        <td class="quantidade">1</td>
+                    </tr> -->
+                </table>
+
+                <!-- Produtos que vieram do class -->
+                <!-- <main class="card-selecionados" id="produtos-selecionados">
+                    <div class="product">
+                        <span class="nameProdutc">Alcatra </span>
+                        <span class="valor">R$60,00</span>
+                        <span class="quantidade">1</span>
+                    </div>
+                </main> -->
+
+                <table class="soma">
+                    <td class="childSoma">SOMA DOS PRODUTOS:</td>
+                    <td class="childSoma"></td>
+                    <td class="childSoma">
+                        <span id="finalPrice">0.00</span>
+                    </td>
+                </table>
+                <table class="soma">
+                    <td class="childSoma">FRETE:</td>
+                    <td class="childSoma"></td>
+                    <td class="childSoma">
+                        <span id="finalFrete">0.00</span>
+                    </td>
+                </table>
+                <table class="somaTotal">
+                    <td class="childSoma">TOTAL:</td>
+                    <td class="childSoma"></td>
+                    <td class="childSoma">
+                        <span id="finalTotal">0.00</span>
+                    </td>
+                </table>
+
+                <form class="formulario">
+                    <div class="forms">
+                        <label for="name">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            class="input"
+                            placeholder="Ex.:Mateus"
+                        />
+
+                        <label for="Telefone">Telefone:</label>
+                        <input
+                            type="number"
+                            id="telefone"
+                            class="input"
+                            placeholder="Ex.:(99) 99999-9999"
+                        />
+                        <label for="tirarBalcao">
+                            <input
+                                type="radio"
+                                id="tirarBalcao"
+                                name="retirada"
+                                value="tirar_balcao"
+                            />
+                            Tirar no Balcão
+                        </label>
+                        <br />
+                        <label for="teleEntrega">
+                            <input
+                                type="radio"
+                                id="teleEntrega"
+                                name="retirada"
+                                value="tele_entrega"
+                            />
+                            Tele-Entrega
+                        </label>
+                        <label for="bairros">Escolha um bairro:</label>
+                        <select
+                            id="bairros"
+                            name="bairro"
+                            onchange="atualizarFrete()"
+                        >
+                            <option value="bairro1" data-frete="5.00">
+                                São Jorge = R$5.00
+                            </option>
+                            <option value="bairro2" data-frete="5.00">
+                                São Pedro = R$5.00
+                            </option>
+                            <option value="bairro3" data-frete="5.00">
+                                Albino Kern = R$5.00
+                            </option>
+                            <option value="bairro4" data-frete="5.00">
+                                Centro = R$5.00
+                            </option>
+                            <option value="bairro5" data-frete="6.00">
+                                Vila Rica = R$6.00
+                            </option>
+                            <option value="bairro6" data-frete="10.00">
+                                Rincão = R$10.00
+                            </option>
+                            <option value="bairro7" data-frete="5.00">
+                                Estação Portão = R$5.00
+                            </option>
+                            <option value="bairro8" data-frete="10.00">
+                                Bairro Liberdade = R$10.00
+                            </option>
+                            <option value="bairro9" data-frete="5.00">
+                                Parque Neto = R$5.00
+                            </option>
+                            <option value="bairro10" data-frete="6.00">
+                                Portão Novo = R$6.00
+                            </option>
+                            <option value="bairro11" data-frete="7.00">
+                                Morada do Sol = R$7.00
+                            </option>
+                            <option value="bairro12" data-frete="7.00">
+                                Ouro Verde = R$7.00
+                            </option>
+                            <option value="bairro13" data-frete="10.00">
+                                Bela Bista = R$10.00
+                            </option>
+
+                            <!-- Adicione mais opções conforme necessário -->
+                        </select>
+                        <label for="endereco">Endereço:</label>
+                        <input
+                            type="text"
+                            id="endereco"
+                            name="endereco"
+                            placeholder="Digite seu endereço..."
+                        />
+                        <label for="formaPagamento"
+                            >Escolha a forma de pagamento:</label
+                        >
+                        <select id="formaPagamento" name="formaPagamento">
+                            <option value="cartaoCredito">
+                                Cartão de Crédito
+                            </option>
+                            <option value="cartaoDebito">
+                                Cartão de Débito
+                            </option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="pix">PIX</option>
+                            <!-- Adicione mais opções conforme necessário -->
+                        </select>
+                    </div>
+                </form>
+                <div class="final">
+                    <a href="./final.html">
+                        <button type="button">Confirmar Pedido</button>
+                    </a>
+                </div>
+            </form>
+        </article>
+    </body>
+</html>

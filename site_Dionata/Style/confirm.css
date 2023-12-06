@@ -1,0 +1,141 @@
+@import url(./style.css);
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #002566;
+    margin-top: 20px;
+}
+
+.formulario {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.forms {
+    display: flex;
+}
+
+.name {
+    width: 100%;
+    display: block;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+
+.input {
+    width: 100%;
+    background-color: #e6ecf8;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 10px 10px 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.forms span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #575757;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formsText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    text-align: center;
+}
+
+body > article > form > div.formsText > label {
+    font-family: "Montserrat", sans-serif;
+}
+
+.caixa-de-texto {
+    width: 96%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    height: 150px;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 100px;
+}
+
+.btn {
+    max-width: 100%;
+    text-align: center;
+    border-radius: 40px;
+}
+
+#enviar {
+    width: 60%;
+    border: none;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #f0f8ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#enviar:hover {
+    background-color: #002566;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .forms {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .caixa-de-texto {
+        height: 150px;
+    }
+
+    .btn {
+        max-width: 100%;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    #enviar {
+        width: 100%;
+    }
+
+    .contato {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .btn-contact {
+        width: 90%;
+    }
+
+    .contato h1 {
+        font-size: 20px;
+        margin: 5px;
+    }
+}

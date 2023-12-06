@@ -1,0 +1,58 @@
+@import url(../Style/style.css);
+
+article {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body > article > h1 {
+    margin-top: 30px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.975rem;
+    text-decoration: none;
+}
+
+body > article > button:nth-child(2) {
+    font-size: 15px;
+    margin-top: 100px;
+    max-width: 100%;
+    width: 90%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-bottom: 10px;
+}
+
+body > article > button:nth-child(3) {
+    font-size: 15px;
+    max-width: 100%;
+    width: 90%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-bottom: 100px;
+}
+
+body > article > button:nth-child(2):hover {
+    background-color: #128c7e;
+    color: #fff;
+}
+
+body > article > button:nth-child(3):hover {
+    background-color: #cc171c;
+    color: #fff;
+}
